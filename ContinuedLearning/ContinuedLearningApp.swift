@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct SoundsBootcamp: App {
+struct ContinuedLearningApp: App {
     var body: some Scene {
         WindowGroup {
-            MultipleSheetsBootcamp()
+            SoundsBootcamp()
         }
     }
 }

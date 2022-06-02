@@ -16,6 +16,8 @@
 		48129ADC2848C34100C941B9 /* MultipleSheetsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48129ADB2848C34100C941B9 /* MultipleSheetsBootcamp.swift */; };
 		48129ADE2848CDBE00C941B9 /* MaskBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48129ADD2848CDBE00C941B9 /* MaskBootcamp.swift */; };
 		48129AE02848D36A00C941B9 /* SoundsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48129ADF2848D36A00C941B9 /* SoundsBootcamp.swift */; };
+		48129AE42848D69600C941B9 /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 48129AE22848D69500C941B9 /* tada.mp3 */; };
+		48129AE52848D69600C941B9 /* badum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 48129AE32848D69500C941B9 /* badum.mp3 */; };
 		48B68F822848726700D4FF22 /* ContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B68F812848726700D4FF22 /* ContinuedLearningApp.swift */; };
 		48B68F842848726700D4FF22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B68F832848726700D4FF22 /* ContentView.swift */; };
 		48B68F862848726A00D4FF22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B68F852848726A00D4FF22 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 		48129ADB2848C34100C941B9 /* MultipleSheetsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheetsBootcamp.swift; sourceTree = "<group>"; };
 		48129ADD2848CDBE00C941B9 /* MaskBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskBootcamp.swift; sourceTree = "<group>"; };
 		48129ADF2848D36A00C941B9 /* SoundsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsBootcamp.swift; sourceTree = "<group>"; };
+		48129AE22848D69500C941B9 /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
+		48129AE32848D69500C941B9 /* badum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = badum.mp3; sourceTree = "<group>"; };
 		48B68F7E2848726700D4FF22 /* ContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B68F812848726700D4FF22 /* ContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuedLearningApp.swift; sourceTree = "<group>"; };
 		48B68F832848726700D4FF22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48129AE12848D67A00C941B9 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				48129AE32848D69500C941B9 /* badum.mp3 */,
+				48129AE22848D69500C941B9 /* tada.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
 		48B68F752848726700D4FF22 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +84,7 @@
 		48B68F802848726700D4FF22 /* ContinuedLearning */ = {
 			isa = PBXGroup;
 			children = (
+				48129AE12848D67A00C941B9 /* sounds */,
 				48B68F812848726700D4FF22 /* ContinuedLearningApp.swift */,
 				48B68F832848726700D4FF22 /* ContentView.swift */,
 				48B68F852848726A00D4FF22 /* Assets.xcassets */,
@@ -156,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B68F892848726A00D4FF22 /* Preview Assets.xcassets in Resources */,
+				48129AE42848D69600C941B9 /* tada.mp3 in Resources */,
 				48B68F862848726A00D4FF22 /* Assets.xcassets in Resources */,
+				48129AE52848D69600C941B9 /* badum.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
