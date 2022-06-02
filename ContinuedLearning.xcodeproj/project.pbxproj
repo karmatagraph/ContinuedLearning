@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48129AB428487C0800C941B9 /* MagnificationGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48129AB328487C0800C941B9 /* MagnificationGestureBootcamp.swift */; };
 		48B68F822848726700D4FF22 /* ContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B68F812848726700D4FF22 /* ContinuedLearningApp.swift */; };
 		48B68F842848726700D4FF22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B68F832848726700D4FF22 /* ContentView.swift */; };
 		48B68F862848726A00D4FF22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B68F852848726A00D4FF22 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48129AB328487C0800C941B9 /* MagnificationGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationGestureBootcamp.swift; sourceTree = "<group>"; };
 		48B68F7E2848726700D4FF22 /* ContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B68F812848726700D4FF22 /* ContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuedLearningApp.swift; sourceTree = "<group>"; };
 		48B68F832848726700D4FF22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				48B68F852848726A00D4FF22 /* Assets.xcassets */,
 				48B68F872848726A00D4FF22 /* Preview Content */,
 				48B68F8F284872CC00D4FF22 /* LongPressGestureBootcamp.swift */,
+				48129AB328487C0800C941B9 /* MagnificationGestureBootcamp.swift */,
 			);
 			path = ContinuedLearning;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				48B68F842848726700D4FF22 /* ContentView.swift in Sources */,
 				48B68F822848726700D4FF22 /* ContinuedLearningApp.swift in Sources */,
+				48129AB428487C0800C941B9 /* MagnificationGestureBootcamp.swift in Sources */,
 				48B68F90284872CC00D4FF22 /* LongPressGestureBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
