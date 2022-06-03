@@ -30,6 +30,7 @@
 		48B68F862848726A00D4FF22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B68F852848726A00D4FF22 /* Assets.xcassets */; };
 		48B68F892848726A00D4FF22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B68F882848726A00D4FF22 /* Preview Assets.xcassets */; };
 		48B68F90284872CC00D4FF22 /* LongPressGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B68F8F284872CC00D4FF22 /* LongPressGestureBootcamp.swift */; };
+		48DCCACE284A22F2000BD71D /* BackgroundThreadBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCCACD284A22F2000BD71D /* BackgroundThreadBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		48B68F852848726A00D4FF22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B68F882848726A00D4FF22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		48B68F8F284872CC00D4FF22 /* LongPressGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureBootcamp.swift; sourceTree = "<group>"; };
+		48DCCACD284A22F2000BD71D /* BackgroundThreadBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				4894CEEC2849BBB100783D92 /* ArrayIsBootcamp.swift */,
 				48B4A5B62849EBBA0037FED6 /* CoreDataBootcamp.swift */,
 				480D0C142849F8E4009A70CF /* CoreDataRelationshipBootcamp.swift */,
+				48DCCACD284A22F2000BD71D /* BackgroundThreadBootcamp.swift */,
 				480D0C162849FA72009A70CF /* CoreDataContainer.xcdatamodeld */,
 				48B4A5B82849ED0A0037FED6 /* FruitsContainer.xcdatamodeld */,
 				48129AB52848960C00C941B9 /* RotationGestureBootcamp.swift */,
@@ -218,6 +221,7 @@
 				48129ADC2848C34100C941B9 /* MultipleSheetsBootcamp.swift in Sources */,
 				48B68F822848726700D4FF22 /* ContinuedLearningApp.swift in Sources */,
 				480D0C182849FA72009A70CF /* CoreDataContainer.xcdatamodeld in Sources */,
+				48DCCACE284A22F2000BD71D /* BackgroundThreadBootcamp.swift in Sources */,
 				480D0C152849F8E5009A70CF /* CoreDataRelationshipBootcamp.swift in Sources */,
 				48129AB428487C0800C941B9 /* MagnificationGestureBootcamp.swift in Sources */,
 				48129ADA2848AE5E00C941B9 /* GeometryReaderBootcamp.swift in Sources */,
