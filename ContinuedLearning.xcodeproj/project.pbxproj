@@ -21,6 +21,8 @@
 		48129AE72848D8B200C941B9 /* HapticBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48129AE62848D8B200C941B9 /* HapticBootcamp.swift */; };
 		48129AE92848DD1400C941B9 /* HashableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48129AE82848DD1400C941B9 /* HashableBootcamp.swift */; };
 		4894CEED2849BBB100783D92 /* ArrayIsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894CEEC2849BBB100783D92 /* ArrayIsBootcamp.swift */; };
+		48B4A5B72849EBBA0037FED6 /* CoreDataBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4A5B62849EBBA0037FED6 /* CoreDataBootcamp.swift */; };
+		48B4A5BA2849ED0A0037FED6 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48B4A5B82849ED0A0037FED6 /* FruitsContainer.xcdatamodeld */; };
 		48B68F822848726700D4FF22 /* ContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B68F812848726700D4FF22 /* ContinuedLearningApp.swift */; };
 		48B68F842848726700D4FF22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B68F832848726700D4FF22 /* ContentView.swift */; };
 		48B68F862848726A00D4FF22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B68F852848726A00D4FF22 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		48129AE62848D8B200C941B9 /* HapticBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticBootcamp.swift; sourceTree = "<group>"; };
 		48129AE82848DD1400C941B9 /* HashableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableBootcamp.swift; sourceTree = "<group>"; };
 		4894CEEC2849BBB100783D92 /* ArrayIsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayIsBootcamp.swift; sourceTree = "<group>"; };
+		48B4A5B62849EBBA0037FED6 /* CoreDataBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBootcamp.swift; sourceTree = "<group>"; };
+		48B4A5B92849ED0A0037FED6 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
 		48B68F7E2848726700D4FF22 /* ContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B68F812848726700D4FF22 /* ContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuedLearningApp.swift; sourceTree = "<group>"; };
 		48B68F832848726700D4FF22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				48129AE62848D8B200C941B9 /* HapticBootcamp.swift */,
 				48129AE82848DD1400C941B9 /* HashableBootcamp.swift */,
 				4894CEEC2849BBB100783D92 /* ArrayIsBootcamp.swift */,
+				48B4A5B62849EBBA0037FED6 /* CoreDataBootcamp.swift */,
+				48B4A5B82849ED0A0037FED6 /* FruitsContainer.xcdatamodeld */,
 				48129AB52848960C00C941B9 /* RotationGestureBootcamp.swift */,
 				48129AB72848990400C941B9 /* DragGestureBootcamp.swift */,
 				48129ABB28489F7900C941B9 /* DragGestureBootcampII.swift */,
@@ -194,6 +200,7 @@
 			files = (
 				48129AE02848D36A00C941B9 /* SoundsBootcamp.swift in Sources */,
 				48129AB82848990400C941B9 /* DragGestureBootcamp.swift in Sources */,
+				48B4A5BA2849ED0A0037FED6 /* FruitsContainer.xcdatamodeld in Sources */,
 				48129ADE2848CDBE00C941B9 /* MaskBootcamp.swift in Sources */,
 				48129ABC28489F7900C941B9 /* DragGestureBootcampII.swift in Sources */,
 				48B68F842848726700D4FF22 /* ContentView.swift in Sources */,
@@ -201,6 +208,7 @@
 				48129AD82848A74E00C941B9 /* ScrollViewReaderBootcamp.swift in Sources */,
 				48129AE92848DD1400C941B9 /* HashableBootcamp.swift in Sources */,
 				48129AE72848D8B200C941B9 /* HapticBootcamp.swift in Sources */,
+				48B4A5B72849EBBA0037FED6 /* CoreDataBootcamp.swift in Sources */,
 				48129ADC2848C34100C941B9 /* MultipleSheetsBootcamp.swift in Sources */,
 				48B68F822848726700D4FF22 /* ContinuedLearningApp.swift in Sources */,
 				48129AB428487C0800C941B9 /* MagnificationGestureBootcamp.swift in Sources */,
@@ -407,6 +415,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		48B4A5B82849ED0A0037FED6 /* FruitsContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				48B4A5B92849ED0A0037FED6 /* FruitsContainer.xcdatamodel */,
+			);
+			currentVersion = 48B4A5B92849ED0A0037FED6 /* FruitsContainer.xcdatamodel */;
+			path = FruitsContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 48B68F762848726700D4FF22 /* Project object */;
 }
