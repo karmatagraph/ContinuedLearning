@@ -12,6 +12,25 @@ struct CustomerModel: Codable, Identifiable {
     let name: String
     let points: Int
     let isPremium: Bool
+    
+    enum CodinKeys: String, CodingKey {
+        case id, name, points, isPremium
+    }
+    
+    init(id: String, name: String, points: Int, isPremium: Bool) {
+        self.id = id
+        self.name = name
+        self.points = points
+        self.isPremium = isPremium
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodinKeys.self)
+        self.id = try container.decode(String.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.points = try container.decode(Int.self, forKey: .points)
+        self.isPremium = try container.decode(Bool.self, forKey: .isPremium)
+    }
 }
 
 class CodableViewModel: ObservableObject {
@@ -28,16 +47,22 @@ class CodableViewModel: ObservableObject {
         //        print(data)
         //        let jsonString = String(data: data, encoding: .utf8)
         //        print(jsonString)
-        if
-            let localData = try? JSONSerialization.jsonObject(with: data),
-            let dictionary = localData as? [String:Any],
-            let id = dictionary["id"] as? String,
-            let name = dictionary["name"] as? String,
-            let points = dictionary["points"] as? Int,
-            let isPremium = dictionary["isPremium"] as? Bool {
-            let newCustomer = CustomerModel(id: id, name: name, points: points, isPremium: isPremium)
-            customer = newCustomer
+//        if
+//            let localData = try? JSONSerialization.jsonObject(with: data),
+//            let dictionary = localData as? [String:Any],
+//            let id = dictionary["id"] as? String,
+//            let name = dictionary["name"] as? String,
+//            let points = dictionary["points"] as? Int,
+//            let isPremium = dictionary["isPremium"] as? Bool {
+//            let newCustomer = CustomerModel(id: id, name: name, points: points, isPremium: isPremium)
+//            customer = newCustomer
+//        }
+        do {
+            self.customer = try JSONDecoder().decode(CustomerModel.self, from: data)
+        } catch let error {
+            print(error.localizedDescription)
         }
+        
         
         
         
