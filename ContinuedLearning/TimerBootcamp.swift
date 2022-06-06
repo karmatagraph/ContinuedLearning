@@ -11,7 +11,7 @@ class color{
 }
 struct TimerBootcamp: View {
     
-    let timer = Timer.publish(every: 0.50, on: .main, in: .common).autoconnect()
+    let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
     
     // Current time
     /*
@@ -45,7 +45,7 @@ struct TimerBootcamp: View {
     */
     
     // Animation counter
-    @State var count: Int = 0
+    @State var count: Int = 1
     var body: some View {
         ZStack{
             RadialGradient(colors: [
@@ -57,6 +57,29 @@ struct TimerBootcamp: View {
                            endRadius: 500)
             .ignoresSafeArea()
             
+            TabView(selection: $count, content: {
+                Rectangle()
+                    .foregroundColor(.red)
+                    .tag(1)
+                Rectangle()
+                    .foregroundColor(.blue)
+                    .tag(2)
+                Rectangle()
+                    .foregroundColor(.green)
+                    .tag(3)
+                Rectangle()
+                    .foregroundColor(.orange)
+                    .tag(4)
+                Rectangle()
+                    .foregroundColor(.teal)
+                    .tag(5)
+            })
+            .frame(height: 200)
+            .tabViewStyle(PageTabViewStyle())
+            
+            
+            // timer loading animation
+            /*
             HStack (spacing: 15){
                 Circle()
                     .offset(y: count == 1 ? -20 :0)
@@ -67,7 +90,7 @@ struct TimerBootcamp: View {
             }
             .frame(width: 150)
             .foregroundColor(.white)
-            
+            */
 //            Text(timeRemaining)
 //                .font(.system(size: 100, weight: .semibold, design: .rounded))
 //                .foregroundColor(.white)
@@ -76,8 +99,8 @@ struct TimerBootcamp: View {
         }
         .onReceive(timer, perform: { _ in
 //            updateTimeRemaining()
-            withAnimation(.easeInOut(duration: 0.5)){
-                count = count == 3 ? 0 : count + 1
+            withAnimation(.default){
+                count = count == 5 ? 1 : count + 1
             }
         })
     }
