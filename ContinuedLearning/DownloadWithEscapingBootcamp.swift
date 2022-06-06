@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct Posts: Codable, Identifiable {
-    let userId: Int
-    let id: Int
-    let title: String
-    let body: String
-}
+//struct Posts: Codable, Identifiable {
+//    let userId: Int
+//    let id: Int
+//    let title: String
+//    let body: String
+//}
 
 typealias posts = ([Posts])-> Void
 
