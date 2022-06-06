@@ -31,6 +31,15 @@ struct CustomerModel: Codable, Identifiable {
         self.points = try container.decode(Int.self, forKey: .points)
         self.isPremium = try container.decode(Bool.self, forKey: .isPremium)
     }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodinKeys.self)
+        try container.encode(id, forKey: .id)
+        try container.encode(name, forKey: .name)
+        try container.encode(points, forKey: .points)
+        try container.encode(isPremium, forKey: .isPremium)
+    }
+    
 }
 
 class CodableViewModel: ObservableObject {
@@ -69,14 +78,16 @@ class CodableViewModel: ObservableObject {
     }
     
     func getJSONData() -> Data? {
+        let customer = CustomerModel(id: "111", name: "Emily", points: 100, isPremium: false)
         
-        let dictionary: [String: Any] = [
-            "id": "12345",
-            "name": "joe",
-            "points": 5,
-            "isPremium": true
-        ]
-        let jsonData = try? JSONSerialization.data(withJSONObject: dictionary, options: [])
+//        let dictionary: [String: Any] = [
+//            "id": "12345",
+//            "name": "joe",
+//            "points": 5,
+//            "isPremium": true
+//        ]
+//        let jsonData = try? JSONSerialization.data(withJSONObject: dictionary, options: [])
+        let jsonData = try? JSONEncoder().encode(customer )
         return jsonData
     }
     
