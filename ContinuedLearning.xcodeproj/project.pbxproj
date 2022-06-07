@@ -36,6 +36,7 @@
 		48C1B9F1284DDCDD001E6330 /* DownloadWithEscapingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1B9F0284DDCDD001E6330 /* DownloadWithEscapingBootcamp.swift */; };
 		48C1B9F3284DEFC6001E6330 /* DownloadWithCombineBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1B9F2284DEFC6001E6330 /* DownloadWithCombineBootcamp.swift */; };
 		48C1B9F5284E07A6001E6330 /* TimerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1B9F4284E07A6001E6330 /* TimerBootcamp.swift */; };
+		48C1B9F7284E1F08001E6330 /* SubscriberBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1B9F6284E1F08001E6330 /* SubscriberBootcamp.swift */; };
 		48DCCACE284A22F2000BD71D /* BackgroundThreadBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCCACD284A22F2000BD71D /* BackgroundThreadBootcamp.swift */; };
 		48DCCAD0284A2C07000BD71D /* WeakSelfBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DCCACF284A2C07000BD71D /* WeakSelfBootcamp.swift */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		48C1B9F0284DDCDD001E6330 /* DownloadWithEscapingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithEscapingBootcamp.swift; sourceTree = "<group>"; };
 		48C1B9F2284DEFC6001E6330 /* DownloadWithCombineBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombineBootcamp.swift; sourceTree = "<group>"; };
 		48C1B9F4284E07A6001E6330 /* TimerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerBootcamp.swift; sourceTree = "<group>"; };
+		48C1B9F6284E1F08001E6330 /* SubscriberBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberBootcamp.swift; sourceTree = "<group>"; };
 		48DCCACD284A22F2000BD71D /* BackgroundThreadBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadBootcamp.swift; sourceTree = "<group>"; };
 		48DCCACF284A2C07000BD71D /* WeakSelfBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +141,7 @@
 				48C1B9F0284DDCDD001E6330 /* DownloadWithEscapingBootcamp.swift */,
 				48C1B9F2284DEFC6001E6330 /* DownloadWithCombineBootcamp.swift */,
 				48C1B9F4284E07A6001E6330 /* TimerBootcamp.swift */,
+				48C1B9F6284E1F08001E6330 /* SubscriberBootcamp.swift */,
 				480D0C162849FA72009A70CF /* CoreDataContainer.xcdatamodeld */,
 				48B4A5B82849ED0A0037FED6 /* FruitsContainer.xcdatamodeld */,
 				48129AB52848960C00C941B9 /* RotationGestureBootcamp.swift */,
@@ -244,6 +247,7 @@
 				48B4A5B72849EBBA0037FED6 /* CoreDataBootcamp.swift in Sources */,
 				48129ADC2848C34100C941B9 /* MultipleSheetsBootcamp.swift in Sources */,
 				48C1B9ED284DB3D1001E6330 /* EscapingClosureBootcamp.swift in Sources */,
+				48C1B9F7284E1F08001E6330 /* SubscriberBootcamp.swift in Sources */,
 				48DCCAD0284A2C07000BD71D /* WeakSelfBootcamp.swift in Sources */,
 				48B68F822848726700D4FF22 /* ContinuedLearningApp.swift in Sources */,
 				480D0C182849FA72009A70CF /* CoreDataContainer.xcdatamodeld in Sources */,
