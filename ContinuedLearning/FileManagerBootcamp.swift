@@ -39,7 +39,7 @@ class LocalFileManager{
     
     func getImage(name: String) -> UIImage? {
         guard let path = getPathForImage(name: name),
-        FileManager.default.fileExists(atPath: path.path)
+              FileManager.default.fileExists(atPath: path.path)
         else {
             print("error getting path or file doesn't exist")
             return nil
@@ -60,6 +60,21 @@ class LocalFileManager{
         return path
     }
     
+    func deleteImage(name: String) {
+        guard let path = getPathForImage(name: name),
+              FileManager.default.fileExists(atPath: path.path)
+        else {
+            print("error getting path or file doesn't exist")
+            return
+        }
+        do {
+            try FileManager.default.removeItem(at: path)
+            print("deleted successfully")
+        } catch let error {
+            print(error, "<------ error deleting image")
+        }
+    }
+    
 }
 
 class FileManagerViewModel: ObservableObject {
@@ -70,7 +85,7 @@ class FileManagerViewModel: ObservableObject {
     
     init() {
         getImageFromAssets()
-//        getImageFromFileManager()
+        //        getImageFromFileManager()
     }
     
     func getImageFromFileManager() {
@@ -86,6 +101,10 @@ class FileManagerViewModel: ObservableObject {
             return
         }
         manager.saveImage(image: image, name: imageName)
+    }
+    
+    func deleteImage() {
+        manager.deleteImage(name: imageName)
     }
     
 }
@@ -105,16 +124,28 @@ struct FileManagerBootcamp: View {
                         .clipped()
                         .cornerRadius(10)
                 }
-                Button {
-                    vm.saveImage()
-                } label: {
-                    Text("Save to fm")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(.blue)
-                        .cornerRadius(10)
-                    
+                HStack {
+                    Button {
+                        vm.saveImage()
+                    } label: {
+                        Text("Save to fm")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(.blue)
+                            .cornerRadius(10)
+                        
+                    }
+                    Button {
+                        vm.deleteImage()
+                    } label: {
+                        Text("Delete from fm")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(.red)
+                            .cornerRadius(10)
+                    }
                 }
                 Spacer()
             }
