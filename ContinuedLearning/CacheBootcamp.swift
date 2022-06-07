@@ -73,7 +73,6 @@ class CacheViewModel:ObservableObject {
             infoMessage = "image not found in cache"
             cachedImage = manager.get(name: imageName)
         }
-        
     }
     
 }
